@@ -1,0 +1,51 @@
+" Enable filetype plugins
+filetype plugin on
+
+filetype indent on
+
+let g:airline_solarized_bg='dark'
+
+" Always show current position
+set ruler
+
+" Show column 80
+set colorcolumn=80
+
+" Wrap text at column 80
+set textwidth=80
+
+" Show line numbers
+set number
+
+" Highlight current line
+set cursorline
+
+" Ignore case when searching
+set ignorecase
+
+" Highlight search results
+set hlsearch
+
+" Show matching {[()]}
+set showmatch
+
+" No sound on errors
+set noerrorbells
+set novisualbell
+
+" Enable syntax highlighting
+syntax enable
+
+set background=dark
+
+colorscheme solarized
+
+" Set utf8 as standard encoding and en_US as standard language
+set encoding=utf8
+
+" Always show the status line
+" set laststatus=2
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
