@@ -16,5 +16,5 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 alias ls='ls -lh --color'
-alias rm='srm -rv'
+alias srm='srm -rv'
 alias config='/usr/bin/git --git-dir=/home/cody/.dotfiles/ --work-tree=/home/cody'
