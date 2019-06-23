@@ -27,13 +27,13 @@ focus_follows_mouse no
 ####################
 
 # Set the wallpaper
-exec --no-startup-id feh --bf-fill /home/cody/med/img/astronaut.jpg
+exec --no-startup-id feh --bf-fill /home/cody/media/images/mountains.jpg
 
 # Start unclutter to hide mouse
 exec --no-startup-id unclutter
 
 # Font for window titles
-font pango:source code pro 12
+font pango:source code pro 11
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
