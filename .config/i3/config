@@ -45,7 +45,6 @@ floating_modifier $mod
 # Open rofi (only show .desktop)
 bindsym $mod+space exec rofi -show run
 
-
 # Open urxvt
 bindsym $mod+Return exec --no-startup-id rxvt-unicode
 
@@ -162,23 +161,43 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-client.focused          #268bd2 #268bd2 #eee8d5 #268bd2
-client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
-client.unfocused        #073642 #073642 #93a1a1 #586e75
-client.urgent           #d33682 #d33682 #fdf6e3 #dc322f
+#########################
+# SOLARIZED DARK COLORS #
+#########################
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+set $BASE03  #002b36
+set $BASE02  #073642
+set $BASE01  #586e75
+set $BASE00  #657b83
+set $BASE0   #839496
+set $BASE1   #93a1a1
+set $BASE2   #eee8d5
+set $BASE3   #fdf6e3
+set $YELLOW  #b58900
+set $ORANGE  #cb4b16
+set $RED     #dc322f
+set $MAGENTA #d33682
+set $VIOLET  #6c71c4
+set $BLUE    #268bd2
+set $CYAN    #2aa198
+set $GREEN   #859900
+
+# CLASS                 BORDER   BACKGROUND TEXT   INDICATOR
+client.focused          $BLUE    $BLUE      $BASE2 $BLUE
+client.focused_inactive $BASE02  $BASE02    $BASE2 $VIOLET
+client.unfocused        $BASE02  $BASE02    $BASE1 $BASE01
+client.urgent           $MAGENTA $MAGENTA   $BASE3 $RED
+
 bar {
     position top
     status_command i3status
     colors {
-        separator          #2aa198
-        background         #002b36
-        statusline         #eee8d5
-        focused_workspace  #268bd2 #268bd2 #eee8d5
-        active_workspace   #002b36 #6c71c4 #fdf6e3
-        inactive_workspace #002b36 #002b36 #93a1a1
-        urgent_workspace   #d33682 #d33682 #fdf6e3
+        separator          $CYAN
+        background         $BASE03
+        statusline         $BASE2
+        focused_workspace  $BLUE    $BLUE    $BASE2
+        active_workspace   $BASE03  $VIOLET  $BASE3
+        inactive_workspace $BASE03  $BASE03  $BASE1
+        urgent_workspace   $MAGENTA $MAGENTA $BASE3
     }
 }
