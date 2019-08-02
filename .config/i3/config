@@ -27,7 +27,7 @@ focus_follows_mouse no
 ####################
 
 # Set the wallpaper
-exec --no-startup-id feh --bf-fill /home/cody/media/images/astronaut.jpg
+exec --no-startup-id feh --bg-fill /home/cody/media/images/mountains.png
 
 # Start unclutter to hide mouse
 exec --no-startup-id unclutter
@@ -93,9 +93,9 @@ bindsym $mod+a focus parent
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1 : term"
-set $ws2 "2 : dev"
-set $ws3 "3 : tor"
-set $ws4 "4 : www"
+set $ws2 "2 : www"
+set $ws3 "3 : dev"
+set $ws4 "4 : tor"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
