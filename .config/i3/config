@@ -32,6 +32,10 @@ exec --no-startup-id feh --bg-fill /home/cody/media/images/mountains.png
 # Start unclutter to hide mouse
 exec --no-startup-id unclutter
 
+# Switch between English and Arabic with Ctrl+Alt
+exec setxkbmap -layout us,ar
+exec setxkbmap -option 'grp:alt_ctrl_toggle'
+
 # Font for window titles
 font pango:source code pro 11
 

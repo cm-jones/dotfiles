@@ -27,6 +27,10 @@ URxvt.letterSpace: -1
 
 *.intensityStyles: false
 
+URxvt.keyym.Shift-Control-V: perl:clipboard:paste
+URxvt.iso14755: False
+URxvt.perl-ext-common: default,clipboard
+
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
