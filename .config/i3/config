@@ -22,6 +22,9 @@ set $mod Mod4
 # Focus doesn't follow cursor
 focus_follows_mouse no
 
+# Eliminate window titles
+new_window 1pixel
+
 ####################
 # Startup commands #
 ####################
