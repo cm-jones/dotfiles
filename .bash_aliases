@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-alias ls='ls -lh --color'
+alias ls='ls -h --color'
 alias srm='srm -rv'
 
 # Used to store configuration files on GitLab
