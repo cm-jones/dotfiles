@@ -17,7 +17,6 @@
 
 alias ls='ls -h --color'
 alias srm='srm -rv'
-alias pass='pass -c' # Never send passwords to stdout
 
 # Used to store configuration files on GitLab
 alias config='/usr/bin/git --git-dir=/home/cody/.dotfiles/ --work-tree=/home/cody'
