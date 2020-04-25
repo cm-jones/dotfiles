@@ -20,3 +20,6 @@ alias srm='srm -rv'
 
 # Used to store configuration files on GitLab
 alias config='/usr/bin/git --git-dir=/home/cody/.dotfiles/ --work-tree=/home/cody'
+
+# Always save mutt attachments in ~/tmp
+alias mutt='cd ~/tmp && mutt'

@@ -20,7 +20,7 @@ filetype plugin on
 
 filetype indent on
 
-let g:airline_solarized_bg='dark'
+let g:airline_theme='gruvbox'
 
 " Always show current position
 set ruler
@@ -28,8 +28,11 @@ set ruler
 " Show column 80
 set colorcolumn=80
 
+" Limit text width in mutt to 72 chars
+au BufRead /tmp/mutt-* set tw=72
+
 " Wrap text at column 80
-set textwidth=80
+"set textwidth=80
 
 " Show line numbers
 set number
@@ -55,7 +58,7 @@ syntax enable
 
 set background=dark
 
-colorscheme solarized
+colorscheme gruvbox
 
 " Set utf8 as standard encoding and en_US as standard language
 set encoding=utf8
