@@ -1,6 +1,6 @@
 " Cody M. Jones' personal vim configuration
 "
-" Copyright (C) 2019 Cody M. Jones <codymjones@pm.me>
+" Copyright (C) 2020 Cody M. Jones <codymjones@pm.me>
 "
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ set colorcolumn=80
 au BufRead /tmp/mutt-* set tw=72
 
 " Wrap text at column 80
-"set textwidth=80
+set textwidth=80
 
 " Show line numbers
 set number
@@ -64,7 +64,7 @@ colorscheme gruvbox
 set encoding=utf8
 
 " Always show the status line
-" set laststatus=2
+set laststatus=2
 
 set expandtab
 set tabstop=4
