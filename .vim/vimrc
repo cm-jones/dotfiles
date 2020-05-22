@@ -1,0 +1,97 @@
+" Cody M. Jones' personal vim configuration
+"
+" Copyright (C) 2020 Cody M. Jones <codymjones@pm.me>
+"
+" This program is free software: you can redistribute it and/or modify
+" it under the terms of the GNU General Public License as published by
+" the Free Software Foundation, either version 3 of the License, or
+" (at your option) any later version.
+"
+" This program is distributed in the hope that it will be useful,
+" but WITHOUT ANY WARRANTY; without even the implied warranty of
+" MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+" GNU General Public License for more details.
+"
+" You should have received a copy of the GNU General Public License
+" along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+set nocompatible
+
+" Disable the default Vim startup message.
+set shortmess+=I
+
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+
+let g:airline_theme='gruvbox'
+
+" Always show current position
+set ruler
+
+" Show column 80
+set colorcolumn=80
+
+" Limit text width in mutt to 72 chars
+au BufRead /tmp/mutt-* set tw=72
+
+" Wrap text at column 80
+set textwidth=80
+
+" Show line numbers
+set number
+set relativenumber
+
+" Highlight current line
+set cursorline
+
+" Ignore case during search only when string is all lowercase
+set ignorecase
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Show matching {[()]}
+set showmatch
+
+" No sound on errors
+set noerrorbells
+set novisualbell
+
+" Enable syntax highlighting
+syntax on
+
+set background=dark
+colorscheme gruvbox
+
+" Set utf8 as standard encoding and en_US as standard language
+set encoding=utf8
+
+" Always show the status line
+set laststatus=2
+
+" Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
+
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+
+" Comments in Vimscript start with a `"`.
+
+" If you open this file in Vim, it'll be syntax highlighted for you.
+
+" By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
+" shown in any window) that has unsaved changes. This is to prevent you from "
+" forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
+" hidden buffers helpful enough to disable this protection. See `:help hidden`
+" for more information on this.
+set hidden
+
+" Enable searching as you type, rather than waiting till you press enter.
+set incsearch
+
+" Unbind some useless/annoying default key bindings.
+nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
