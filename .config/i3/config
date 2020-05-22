@@ -29,7 +29,7 @@ new_window 1pixel
 ####################
 
 # Set the wallpaper
-exec --no-startup-id feh --bg-fill /home/cody/media/images/coffee.png
+exec --no-startup-id feh --bg-fill /home/cody/images/gnu-love.tif
 
 # Start unclutter to hide mouse
 exec --no-startup-id unclutter
@@ -177,7 +177,7 @@ set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
 
-client.focused          $blue $blue $darkgray $purple $darkgray
+client.focused          $blue $blue $darkgray $bg $darkgray
 client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 client.urgent           $red $red $white $red $red

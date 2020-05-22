@@ -20,7 +20,15 @@ filetype plugin on
 
 filetype indent on
 
-let g:airline_theme='gruvbox'
+" Map Escape to Caps Lock upon entering Vim
+au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+" Reverse mapping upon exiting Vim
+au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
+" Keycode delay
+set timeoutlen=1000
+set ttimeoutlen=5
 
 " Always show current position
 set ruler
@@ -32,16 +40,18 @@ set colorcolumn=80
 au BufRead /tmp/mutt-* set tw=72
 
 " Wrap text at column 80
-"set textwidth=80
+set textwidth=80
 
 " Show line numbers
 set number
+set relativenumber
 
 " Highlight current line
 set cursorline
 
 " Ignore case when searching
 set ignorecase
+set smartcase
 
 " Highlight search results
 set hlsearch
@@ -56,15 +66,14 @@ set novisualbell
 " Enable syntax highlighting
 syntax enable
 
-set background=dark
-
 colorscheme gruvbox
+set background=dark
 
 " Set utf8 as standard encoding and en_US as standard language
 set encoding=utf8
 
-" Always show the status line
-" set laststatus=2
+" Always show the status line even with one window
+set laststatus=2
 
 set expandtab
 set tabstop=4
