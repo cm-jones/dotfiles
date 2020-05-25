@@ -39,7 +39,7 @@ exec setxkbmap -layout us,ar
 exec setxkbmap -option 'grp:alt_ctrl_toggle'
 
 # Font for window titles
-font pango:source code pro 11
+font pango:source code pro 12
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -49,7 +49,7 @@ floating_modifier $mod
 ########################
 
 # Open rofi (only show .desktop)
-bindsym $mod+space exec rofi -show run
+bindsym $mod+space exec rofi -show drun
 
 # Open urxvt
 bindsym $mod+Return exec --no-startup-id rxvt-unicode

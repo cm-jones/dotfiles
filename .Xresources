@@ -21,8 +21,8 @@
 ! Disable scrollbar
 *scrollBar: false
 
-URxvt.font: xft:source code variable:size=11
-rofi.font: source code variable 11
+URxvt.font: xft:source code variable:size=12
+rofi.font: source code variable 12
 URxvt.letterSpace: -1
 
 *.intensityStyles: false
